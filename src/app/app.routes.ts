@@ -12,4 +12,5 @@ export const routes: Routes = [
     {path:"contact",component:Contact},
     {path:"details",component:Details},
     {path:"**",component:PageNotFound}
+    
 ];

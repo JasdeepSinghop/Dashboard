@@ -1,13 +1,15 @@
-.container{
-  display: flex;
-  flex-direction: column;
+
+.main{
+  display: flex; 
 }
 
-.content{
-  display: flex;
+.sidebar{
+  /* background-color: red; */
+
 }
 
-.maincon{
-  background-color:aqua ;
-  width: 100%;
+.rightside{
+  /* background-color: purple; */
+  width: calc(100vw - 230px);
+  overflow: hidden;
 }
