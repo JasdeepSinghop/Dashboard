@@ -1,0 +1,8 @@
+.dashboard-layout{
+    display: flex;
+}
+
+.main-content{
+    /* background-color: aqua; */
+    width: 100vw;
+}

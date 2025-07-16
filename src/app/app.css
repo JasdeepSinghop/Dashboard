@@ -1,13 +1,25 @@
-.container{
-  display: flex;
-  flex-direction: column;
+/* 
+.left{
+  background-color: black;
+}
+
+.right {
+  background-color: green;
 }
 
 .content{
   display: flex;
+  height: 100vh;
 }
 
 .maincon{
-  background-color:aqua ;
-  width: 100%;
+  background-color: aqua;
+  width: calc(100vw - 200px);
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
