@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class Sidebar {
 
+  display=true;
+
+  displaySide(){
+     this.display = !this.display;
+  }
+ 
+
 }

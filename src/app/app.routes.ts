@@ -14,6 +14,7 @@ import { Details } from './dashboard/pages/details/details';
 import { PageNotFound } from './page-not-found/page-not-found';
 
 export const routes: Routes = [
+// <<<<<<< HEAD
   { path: '', redirectTo: 'signup', pathMatch: 'full' },
   { path: 'login', component: Login },
   { path: 'signup', component: Signup },
@@ -30,7 +31,15 @@ export const routes: Routes = [
     ]
   },
 
-  { path: '**', component: PageNotFound }
+  { path: '**', component: PageNotFound },
+// =======
+    {path:"home",component:Home},
+    {path:"",component:Home},
+    {path:"about",component:About},
+    {path:"contact",component:Contact},
+    {path:"details",component:Details},
+    {path:"**",component:PageNotFound}
+    
 ];
 
 

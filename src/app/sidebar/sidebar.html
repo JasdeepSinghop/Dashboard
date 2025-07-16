@@ -1,0 +1,12 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<button (click)="displaySide()" class="button">></button>
+<div class="sideBar" [hidden]="display">
+  <ul>
+    <br>
+    <li><a routerLink="/">Dash Board</a></li>
+    <li><a routerLink="/about">Profile</a></li>
+    <li><a routerLink="/contact">Setting</a></li>
+    <!-- <li><a routerLink="/details">Details</a></li> -->
+  </ul>
+</div>

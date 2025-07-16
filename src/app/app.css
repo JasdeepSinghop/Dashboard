@@ -1,25 +1,13 @@
-/* 
-.left{
-  background-color: black;
-}
-
-.right {
-  background-color: green;
+.container{
+  display: flex;
+  flex-direction: column;
 }
 
 .content{
   display: flex;
-  height: 100vh;
 }
 
 .maincon{
-  background-color: aqua;
-  width: calc(100vw - 200px);
-} */
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background-color:aqua ;
+  width: 100%;
 }
-
