@@ -1,19 +1,3 @@
-// import { Component } from '@angular/core';
-// import { ReactiveFormsModule,FormGroup,FormsModule } from '@angular/forms';
-// import { RouterLink } from '@angular/router';
-
-// @Component({
-//   selector: 'app-signup',
-//   imports: [ReactiveFormsModule],
-//   // imports: [RouterLink,ReactiveFormsModule],
-//   templateUrl: './signup.html',
-//   styleUrl: './signup.css'
-// })
-// export class Signup {
-// onSubmit(form: any) {
-//     console.log('Signup form submitted:', form.value);}
-// }
-
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // ✅ Needed for ngModel
 import { RouterLink } from '@angular/router'; // Optional: if you use routerLink in HTML
@@ -40,3 +24,21 @@ export class Signup {
     this.router.navigate(['/login']);
   }
 }
+
+
+
+// import { Component } from '@angular/core';
+// import { ReactiveFormsModule,FormGroup,FormsModule } from '@angular/forms';
+// import { RouterLink } from '@angular/router';
+
+// @Component({
+//   selector: 'app-signup',
+//   imports: [ReactiveFormsModule],
+//   // imports: [RouterLink,ReactiveFormsModule],
+//   templateUrl: './signup.html',
+//   styleUrl: './signup.css'
+// })
+// export class Signup {
+// onSubmit(form: any) {
+//     console.log('Signup form submitted:', form.value);}
+// }

@@ -1,1 +1,45 @@
-<h1>Home</h1>
+<div class="home-container">
+  <h2>Student List</h2>
+
+  <button (click)="openAddForm()" class="add-button">+ Add</button>
+
+  <!-- Form Modal -->
+  <div class="modal" *ngIf="showForm">
+    <div class="modal-content">
+      <h3>{{ isEditing ? 'Edit Student' : 'Add Student' }}</h3>
+      <form (ngSubmit)="submitForm()" #studentForm="ngForm">
+        <input type="text" name="name" [(ngModel)]="formData.name" placeholder="Name" required />
+        <input type="text" name="contact" [(ngModel)]="formData.contact" placeholder="Contact Number" required />
+        <input type="text" name="roll" [(ngModel)]="formData.roll" placeholder="Roll Number" required />
+
+        <div class="form-actions">
+          <button type="submit">{{ isEditing ? 'Update' : 'Add' }}</button>
+          <button type="button" (click)="closeForm()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Data Table -->
+  <table class="data-table" *ngIf="students.length > 0">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Contact</th>
+        <th>Roll</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students; let i = index">
+        <td>{{ student.name }}</td>
+        <td>{{ student.contact }}</td>
+        <td>{{ student.roll }}</td>
+        <td>
+          <button (click)="editStudent(i)">Edit</button>
+          <button (click)="deleteStudent(i)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,23 +1,7 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-login',
-//   imports: [],
-//   templateUrl: './login.html',
-//   styleUrl: './login.css'
-// })
-// export class Login {
-
-// }
-
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';     // ✅ Needed for ngModel
 import { RouterLink } from '@angular/router';     // ✅ Optional if using routerLink
 import { Router } from '@angular/router';
-
-
-
-
 
 @Component({
   selector: 'app-login',
@@ -58,3 +42,15 @@ export class Login {
   }
 }
 
+
+// import { Component } from '@angular/core';
+
+// @Component({
+//   selector: 'app-login',
+//   imports: [],
+//   templateUrl: './login.html',
+//   styleUrl: './login.css'
+// })
+// export class Login {
+
+// }
